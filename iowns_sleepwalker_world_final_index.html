@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iown's Sleepwalker World</title>
+  <style>
+    :root{
+      --bg:#0c0a10; --panel:#17121f; --text:#f4efe8; --muted:#c7b9a7; --accent:#d5a85c; --line:rgba(255,255,255,.12);
+    }
+    *{box-sizing:border-box} body{margin:0;font-family:Georgia,serif;background:radial-gradient(circle at top, rgba(213,168,92,.18), transparent 28%),radial-gradient(circle at 80% 20%, rgba(139,92,246,.16), transparent 18%),linear-gradient(180deg,#09070d,#15101b 45%,#0b0910);color:var(--text)}
+    a{color:inherit;text-decoration:none}.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+    .nav{position:sticky;top:0;z-index:10;backdrop-filter:blur(12px);background:rgba(9,7,13,.84);border-bottom:1px solid var(--line)}
+    .nav-inner{display:flex;justify-content:space-between;align-items:center;padding:16px 0;gap:18px}.brand{font-size:1.25rem;font-weight:700}.nav-links{display:flex;gap:18px;flex-wrap:wrap;color:var(--muted);font-size:.95rem}
+    .hero{padding:70px 0 40px}.badge{display:inline-block;padding:8px 14px;border:1px solid rgba(213,168,92,.35);border-radius:999px;color:#f3d9a4;background:rgba(213,168,92,.08);font-size:.8rem;letter-spacing:.12em;text-transform:uppercase}
+    h1{font-size:clamp(2.4rem,7vw,4.8rem);line-height:1.02;margin:18px 0}.lead{max-width:800px;color:var(--muted);font-size:1.12rem;line-height:1.75}
+    .cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-block;padding:14px 20px;border-radius:18px;border:1px solid var(--line);background:#f6f2eb;color:#111;font-weight:700}.btn.alt{background:transparent;color:var(--text)}
+    .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin-top:36px}.stat,.card{background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));border:1px solid var(--line);border-radius:26px;box-shadow:0 20px 40px rgba(0,0,0,.22)}
+    .stat{padding:20px}.stat strong{display:block;font-size:2rem}section{padding:34px 0}h2{font-size:clamp(1.8rem,4vw,3rem);margin:0 0 10px}.section-copy{color:var(--muted);max-width:850px;line-height:1.7;margin-bottom:24px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}.card{padding:22px}.card h3{margin:0 0 8px;font-size:1.28rem}.sub{color:#f1cd8c;font-size:.92rem;margin-bottom:10px}.muted{color:var(--muted);line-height:1.65}
+    .prices{margin:12px 0 16px;padding-left:18px;color:var(--muted)} .prices li{margin:6px 0}.tag{display:inline-block;margin-top:8px;font-size:.78rem;padding:6px 10px;border-radius:999px;background:rgba(139,92,246,.18);border:1px solid rgba(139,92,246,.28);color:#e4d7ff}
+    .button-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}.small-btn{display:inline-block;padding:11px 14px;border-radius:14px;border:1px solid var(--line);background:rgba(255,255,255,.05);color:var(--text);font-size:.94rem;font-weight:700}.small-btn.primary{background:linear-gradient(180deg,#f4ddae,#c79b4f);color:#1a1308;border:none}
+    .notice{margin-top:14px;padding:12px 14px;border-radius:16px;background:rgba(213,168,92,.08);border:1px solid rgba(213,168,92,.24);color:#efd8b2;font-size:.92rem;line-height:1.5}
+    .banner{display:grid;grid-template-columns:1.2fr .8fr;gap:18px;align-items:stretch}.panel{padding:26px}.list{padding-left:20px;color:var(--muted);line-height:1.7}.footer{padding:40px 0 70px;color:var(--muted);font-size:.95rem}
+    @media (max-width:800px){.banner{grid-template-columns:1fr}.nav-inner{align-items:flex-start;flex-direction:column}}
+  </style>
+</head>
+<body>
+  <div class="nav"><div class="wrap nav-inner"><div class="brand">Iown's Sleepwalker World</div><div class="nav-links"><a href="#season1">Season 1</a><a href="#expanded">Expanded World</a><a href="#season2">Season 2</a><a href="#merch">Merch</a><a href="#next">Next Steps</a></div></div></div>
+  <div class="wrap">
+    <section class="hero">
+      <span class="badge">Sleepwalker Universe • Live Site</span>
+      <h1>The Sleepwalker Universe now has a home of its own.</h1>
+      <p class="lead">A living author platform for your published books, future seasons, merchandise, reader growth, and brand expansion into film, series, stage, and more.</p>
+      <div class="cta-row">
+        <a class="btn" href="#season1">Shop Season 1</a>
+        <a class="btn alt" href="https://amazon.com/author/iownssleepwalkerworld2" target="_blank" rel="noopener">Shop All Books on Amazon</a>
+      </div>
+      <div class="notice">Amazon buttons are now linked to your public Amazon author page. Upload this file to GitHub as <strong>index.html</strong>, then redeploy on Vercel.</div>
+      <div class="stats"><div class="stat"><strong>9</strong>Published books live now</div><div class="stat"><strong>Season 1</strong>Official Amazon grouping</div><div class="stat"><strong>Season 2</strong>Begins with <em>The Unacceptable</em></div></div>
+    </section>
+
+    <section id="season1">
+      <h2>Season 1 — Available Now</h2>
+      <p class="section-copy">These books are presented as the core Sleepwalker collection now available to readers. The direct checkout buttons below are placeholders for future Stripe setup. The Amazon buttons can be wired now.</p>
+      <div class="grid">
+        <div class="card"><h3>Sleepwalker: The Awakening</h3><div class="sub">Season 1 • Published</div><p class="muted">The beginning of the Sleepwalker universe and the doorway into the larger spiritual and psychological journey.</p><ul class="prices"><li>Paperback — $19.99</li><li>Hardcover — $27.99</li><li>eBook — $5.99</li></ul><span class="tag">Published</span><div class="button-row"><a class="small-btn primary" href="#">Buy Direct Soon</a><a class="small-btn" href="https://amazon.com/author/iownssleepwalkerworld2" target="_blank" rel="noopener">Buy on Amazon</a></div></div>
+        <div class="card"><h3>Sleepwalker: The Untrustworthy</h3><div class="sub">Season 1 • Published</div><p class="muted">A story driven by pain, speed, loyalty, and the cost of never slowing down enough to hear God.</p><ul class="prices"><li>Paperback — $19.99</li><li>Hardcover — $27.99</li><li>eBook — $5.99</li></ul><span class="tag">Published</span><div class="button-row"><a class="small-btn primary" href="#">Buy Direct Soon</a><a class="small-btn" href="https://amazon.com/author/iownssleepwalkerworld2" target="_blank" rel="noopener">Buy on Amazon</a></div></div>
+        <div class="card"><h3>Sleepwalker: The Untrusted</h3><div class="sub">Season 1 • Published</div><p class="muted">A spiritual and psychological journey through influence, identity, and consequence in a world that rarely slows down for awareness.</p><ul class="prices"><li>Paperback — $19.99</li><li>Hardcover — $27.99</li><li>eBook — $5.99</li></ul><span class="tag">Published</span><div class="button-row"><a class="small-btn primary" href="#">Buy Direct Soon</a><a class="small-btn" href="https://amazon.com/author/iownssleepwalkerworld2" target="_blank" rel="noopener">Buy on Amazon</a></div></div>
+        <div class="card"><h3>Sleepwalker: The Unforgivable</h3><div class="sub">Season 1 • Published</div><p class="muted">A family-centered story of pain, neglect, betrayal, generational damage, and the cost of not rising above old wounds.</p><ul class="prices"><li>Paperback — $19.99</li><li>Hardcover — $27.99</li><li>eBook — $5.99</li></ul><span class="tag">Published</span><div class="button-row"><a class="small-btn primary" href="#">Buy Direct Soon</a><a class="small-btn" href="https://amazon.com/author/iownssleepwalkerworld2" target="_blank" rel="noopener">Buy on Amazon</a></div></div>
+        <div class="card"><h3>Sleepwalker: The Unavoidable</h3><div class="sub">Season 1 • Published</div><p class="muted">A broad, multi-life reflection on consequences, divine movement, and the unseen force connecting moments and decisions.</p><ul class="prices"><li>Paperback — $19.99</li><li>Hardcover — $27.99</li><li>eBook — $5.99</li></ul><span class="tag">Published</span><div class="button-row"><a class="small-btn primary" href="#">Buy Direct Soon</a><a class="small-btn" href="https://amazon.com/author/iownssleepwalkerworld2" target="_blank" rel="noopener">Buy on Amazon</a></div></div>
+        <div class="card"><h3>Sleepwalker: The Unattractive</h3><div class="sub">Season 1 • Published</div><p class="muted">A mirror of hidden selves, emotional facades, and the parts of identity most people would rather not face.</p><ul class="prices"><li>Paperback — $19.99</li><li>Hardcover — $27.99</li><li>eBook — $5.99</li></ul><span class="tag">Published</span><div class="button-row"><a class="small-btn primary" href="#">Buy Direct Soon</a><a class="small-btn" href="https://amazon.com/author/iownssleepwalkerworld2" target="_blank" rel="noopener">Buy on Amazon</a></div></div>
+        <div class="card"><h3>Sleepwalker: Wake Up My Child</h3><div class="sub">Season 1 • Published</div><p class="muted">A Sleepwalker-universe title centered on spirit, coma, faith, family, and the fight to come back home.</p><ul class="prices"><li>Paperback — $19.99</li><li>Hardcover — $27.99</li><li>eBook — $5.99</li></ul><span class="tag">Published</span><div class="button-row"><a class="small-btn primary" href="#">Buy Direct Soon</a><a class="small-btn" href="https://amazon.com/author/iownssleepwalkerworld2" target="_blank" rel="noopener">Buy on Amazon</a></div></div>
+      </div>
+    </section>
+
+    <section id="expanded">
+      <h2>Expanded World — Connected Titles</h2>
+      <p class="section-copy">These works deepen the worldview around your spiritual themes and broaden the entry points for new readers.</p>
+      <div class="grid">
+        <div class="card"><h3>Before We Chose Religion</h3><div class="sub">Connected Title • Published</div><p class="muted">A return to humanity, truth, and the spiritual roots that existed before labels and division.</p><ul class="prices"><li>Paperback — $15.99</li><li>Hardcover — $24.99</li><li>eBook — $3.99</li></ul><span class="tag">Published</span><div class="button-row"><a class="small-btn primary" href="#">Buy Direct Soon</a><a class="small-btn" href="https://amazon.com/author/iownssleepwalkerworld2" target="_blank" rel="noopener">Buy on Amazon</a></div></div>
+        <div class="card"><h3>Chosen Before Belief</h3><div class="sub">Connected Title • Published</div><p class="muted">A philosophical and emotional exploration of awakening, struggle, healing, and the reality behind belief.</p><ul class="prices"><li>Paperback — $15.99</li><li>eBook — $2.99</li></ul><span class="tag">Published</span><div class="button-row"><a class="small-btn primary" href="#">Buy Direct Soon</a><a class="small-btn" href="https://amazon.com/author/iownssleepwalkerworld2" target="_blank" rel="noopener">Buy on Amazon</a></div></div>
+      </div>
+    </section>
+
+    <section id="season2">
+      <div class="banner">
+        <div class="card panel"><h2>Season 2 begins here</h2><p class="section-copy">The next chapter of the universe starts with <strong>Sleepwalker: The Unacceptable</strong>. This area is built to grow into waitlists, preorders, launch graphics, and countdown campaigns.</p><div class="button-row"><a class="small-btn primary" href="#">Join Waitlist Soon</a><a class="small-btn" href="#next">Build Launch Campaign</a></div></div>
+        <div class="card panel"><h3 style="margin-top:0">Future-ready expansion</h3><ul class="list"><li>Season 2 landing page</li><li>Email capture</li><li>Preorder buttons</li><li>Character spotlights</li><li>Merch drops tied to releases</li><li>Film, stage, and streaming pitch section</li></ul></div>
+      </div>
+    </section>
+
+    <section id="merch">
+      <h2>Merchandise — Next revenue layer</h2>
+      <p class="section-copy">This section is ready for your hoodies, journals, totes, and collector items once product images and checkout are connected.</p>
+      <div class="grid"><div class="card"><h3>Sleepwalker Signature Hoodie</h3><p class="muted">Premium apparel tied to the series identity.</p></div><div class="card"><h3>Supreme Energy Journal</h3><p class="muted">A reflection journal tied to the spiritual core of the brand.</p></div><div class="card"><h3>Sleepwalker Tote</h3><p class="muted">Branded carry item for readers, events, and launches.</p></div></div>
+    </section>
+
+    <section id="next">
+      <h2>What still needs to be done</h2>
+      <div class="grid"><div class="card"><h3>1. Replace Amazon placeholder link</h3><p class="muted">Paste your public Amazon Author page or public series/store page in place of the placeholder link in this file.</p></div><div class="card"><h3>2. Add real cover images</h3><p class="muted">We can add your actual cover art to each card and create a stronger shopping experience.</p></div><div class="card"><h3>3. Connect Stripe</h3><p class="muted">This will activate Buy Direct buttons so readers can purchase from your site as well as Amazon.</p></div></div>
+    </section>
+
+    <div class="footer">Iown's Sleepwalker World is live as a brand hub. The next phase is turning it into a fully wired storefront.</div>
+  </div>
+</body>
+</html>
